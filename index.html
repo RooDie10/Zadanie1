@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Zadanie 1</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <style>
+    #map {
+      height: 400px;
+      width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <form id="place-form">
+    <label for="name">Nazwa:</label>
+    <input type="text" id="name" required /><br />
+    <label for="description">Opis:</label>
+    <textarea id="description" required></textarea><br />
+    <label for="coordinates">Współrzędne:</label>
+    <input type="text" id="coordinates" readonly /><br />
+    <button type="submit">Zapisz</button>
+  </form>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
